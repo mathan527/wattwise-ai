@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WattWise AI</title>
+<meta name="description" content="Unsupervised ML for electricity usage analysis, anomaly detection and energy-waste investigation.">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="bolt">&#9889;</span> WattWise <b>AI</b></div>
+  <nav id="nav">
+    <button data-tab="overview" class="on">Overview</button>
+    <button data-tab="profiles">K-means</button>
+    <button data-tab="gmm">GMM + EM</button>
+    <button data-tab="pca">PCA</button>
+    <button data-tab="factor">Factor Analysis</button>
+    <button data-tab="hier">Hierarchical</button>
+    <button data-tab="eval">Evaluation</button>
+    <button data-tab="anomaly">Anomalies</button>
+  </nav>
+</header>
+<main>
+  <section id="overview" class="tab on"></section>
+  <section id="profiles" class="tab"></section>
+  <section id="gmm" class="tab"></section>
+  <section id="pca" class="tab"></section>
+  <section id="factor" class="tab"></section>
+  <section id="hier" class="tab"></section>
+  <section id="eval" class="tab"></section>
+  <section id="anomaly" class="tab"></section>
+</main>
+<footer>WattWise AI &middot; ML Unit 3 &middot; Alerts are leads for investigation, not proof of wasted electricity.</footer>
+<script src="app.js"></script>
+</body>
+</html>
